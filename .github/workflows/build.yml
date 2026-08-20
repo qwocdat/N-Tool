@@ -25,5 +25,5 @@ jobs:
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: |
-          npx eas-cli project:init --non-interactive || true
+          eas project:init --id $(eas project:create --name n-tool --non-interactive | grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}') || true
           eas build --platform android --profile preview --non-interactive
