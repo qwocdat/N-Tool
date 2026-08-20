@@ -1,14 +1,12 @@
-name: Build N-Tool APK Real
-
+name: Build Android APK
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -24,5 +22,6 @@ jobs:
       - name: Build Android APK
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          EAS_PROJECT_ID: "8b1189ad-51c7-4cf6-8f93-474090766d2e"
         run: |
           eas build --platform android --profile preview --non-interactive --no-wait
