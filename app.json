@@ -2,6 +2,7 @@
   "expo": {
     "name": "N-Tool",
     "slug": "n-tool",
+    "owner": "ame1610",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
