@@ -21,9 +21,8 @@ jobs:
       - name: Setup EAS CLI
         run: npm install -g eas-cli
 
-      - name: Build Android APK via Expo Cloud
+      - name: Build Android APK
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: |
-          eas init --auto
           eas build --platform android --profile preview --non-interactive
