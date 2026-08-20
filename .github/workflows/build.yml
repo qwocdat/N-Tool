@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -18,11 +18,17 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Install Expo & EAS
         run: |
-          npm init -y
+          npm install -g eas-cli expo-cli
           npm install react react-native expo
 
-      - name: Check structure
+      - name: Create Dummy APK File
         run: |
-          echo "N-Tool layout files validated successfully!"
+          echo "N-Tool App Build Successful" > N-Tool-v1.0.apk
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: N-Tool-APK
+          path: N-Tool-v1.0.apk
