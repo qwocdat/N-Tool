@@ -7,11 +7,6 @@
     "userInterfaceStyle": "light",
     "android": {
       "package": "com.qwocdat.ntool"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "11111111-1111-1111-1111-111111111111"
-      }
     }
   }
 }
