@@ -8,7 +8,6 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
       
-      {/* 1. DYNAMIC ISLAND */}
       <TouchableOpacity 
         activeOpacity={0.8}
         onPress={() => setIslandExpanded(!islandExpanded)}
@@ -27,13 +26,11 @@ export default function App() {
         )}
       </TouchableOpacity>
 
-      {/* 2. LIQUID GLASS CONTAINER */}
       <View style={styles.glassCard}>
         <Text style={styles.cardTitle}>N Tool System</Text>
         <Text style={styles.cardSub}>Trải nghiệm giao diện iOS trên Xiaomi</Text>
       </View>
 
-      {/* 3. SIMULATED iOS KEYBOARD PREVIEW */}
       <View style={styles.keyboardPreview}>
         <Text style={styles.keyText}>Giao diện Bàn phím iOS (Liquid Glass)</Text>
         <View style={styles.keyRow}>
