@@ -4,9 +4,8 @@
     "slug": "n-tool",
     "owner": "ame1610",
     "version": "1.0.0",
-    "orientation": "portrait",
     "sdkVersion": "51.0.0",
-    "platforms": ["android"],
+    "entryPoint": "./App.js",
     "android": {
       "package": "com.qwocdat.ntool"
     },
