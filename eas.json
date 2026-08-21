@@ -3,6 +3,7 @@
     "preview": {
       "android": {
         "buildType": "apk",
+        "gradleCommand": "assembleRelease",
         "image": "ubuntu-22.04-jdk-17-ndk-r26b"
       }
     }
