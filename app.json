@@ -4,6 +4,7 @@
     "slug": "n-tool",
     "version": "1.0.0",
     "sdkVersion": "51.0.0",
+    "orientation": "portrait",
     "android": {
       "package": "com.qwocdat.ntool"
     },
