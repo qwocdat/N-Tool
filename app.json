@@ -4,6 +4,9 @@
     "slug": "n-tool",
     "version": "1.0.0",
     "sdkVersion": "51.0.0",
+    "android": {
+      "package": "com.qwocdat.ntool"
+    },
     "extra": {
       "eas": {
         "projectId": "8b1189ad-51c7-4cf6-8f93-474090766d2e"
