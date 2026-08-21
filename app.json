@@ -2,13 +2,8 @@
   "expo": {
     "name": "N-Tool",
     "slug": "n-tool",
-    "owner": "ame1610",
     "version": "1.0.0",
     "sdkVersion": "51.0.0",
-    "entryPoint": "./App.js",
-    "android": {
-      "package": "com.qwocdat.ntool"
-    },
     "extra": {
       "eas": {
         "projectId": "8b1189ad-51c7-4cf6-8f93-474090766d2e"
