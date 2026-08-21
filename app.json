@@ -5,7 +5,8 @@
     "owner": "ame1610",
     "version": "1.0.0",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
+    "sdkVersion": "51.0.0",
+    "platforms": ["android"],
     "android": {
       "package": "com.qwocdat.ntool"
     },
